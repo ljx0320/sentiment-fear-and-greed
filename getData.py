@@ -14,14 +14,14 @@ def getAllHistoricalData():
     fg_data = data['fear_and_greed_historical']['data']
     fear_greed_values = {}
 
-    FEAR_GREED_CSV_FILENAME = ['datasets/fear-greed-2020-2023.csv', 'Date,Fear Greed', data['fear_and_greed_historical']['data']]
-    MARKET_MOMENTUM = ['datasets/market-momentum-2020-2023.csv', 'Date,Market Momentum', data['market_momentum_sp500']['data']]
-    STOCK_PRICE_STRENGTH = ['datasets/stock-price-strength-2020-2023.csv', 'Date,Stock Price Strength',data['stock_price_strength']['data']]
-    STOCK_PRICE_BREADTH = ['datasets/stock-price-breadth-2020-2023.csv', 'Date,Stock Price Breadth',data['stock_price_breadth']['data']]
-    PUT_AND_CALL_OPTIONS = ['datasets/put-and-call-options-2020-2023.csv', 'Date,Put and Call Options',data['put_call_options']['data']]
-    MARKET_VOLATILITY = ['datasets/market-volatility-2020-2023.csv', 'Date,Market Volatility',data['market_volatility_vix']['data']]
-    SAFE_HAVEN_DEMAND = ['datasets/safe-haven-demand-2020-2023.csv', 'Date,Safe Haven Demand',data['safe_haven_demand']['data']]
-    JUNK_BOND_DEMAND = ['datasets/junk-bond-demand-2020-2023.csv', 'Date,Junk Bond Demand',data['junk_bond_demand']['data']]
+    FEAR_GREED_CSV_FILENAME = ['datasets/fear-greed-2020-2023-tmp.csv', 'Date,Fear Greed', data['fear_and_greed_historical']['data']]
+    MARKET_MOMENTUM = ['datasets/market-momentum-2020-2023-tmp.csv', 'Date,Market Momentum', data['market_momentum_sp500']['data']]
+    STOCK_PRICE_STRENGTH = ['datasets/stock-price-strength-2020-2023-tmp.csv', 'Date,Stock Price Strength',data['stock_price_strength']['data']]
+    STOCK_PRICE_BREADTH = ['datasets/stock-price-breadth-2020-2023-tmp.csv', 'Date,Stock Price Breadth',data['stock_price_breadth']['data']]
+    PUT_AND_CALL_OPTIONS = ['datasets/put-and-call-options-2020-2023-tmp.csv', 'Date,Put and Call Options',data['put_call_options']['data']]
+    MARKET_VOLATILITY = ['datasets/market-volatility-2020-2023-tmp.csv', 'Date,Market Volatility',data['market_volatility_vix']['data']]
+    SAFE_HAVEN_DEMAND = ['datasets/safe-haven-demand-2020-2023-tmp.csv', 'Date,Safe Haven Demand',data['safe_haven_demand']['data']]
+    JUNK_BOND_DEMAND = ['datasets/junk-bond-demand-2020-2023-tmp.csv', 'Date,Junk Bond Demand',data['junk_bond_demand']['data']]
     all_Data = [FEAR_GREED_CSV_FILENAME, MARKET_MOMENTUM, STOCK_PRICE_STRENGTH, STOCK_PRICE_BREADTH, PUT_AND_CALL_OPTIONS,
                 MARKET_VOLATILITY, SAFE_HAVEN_DEMAND, JUNK_BOND_DEMAND]
 

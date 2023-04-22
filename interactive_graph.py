@@ -49,7 +49,7 @@ junk_bond_demand_df = pd.read_csv(junk_bond_demand_csv_file)
 junk_bond_demand_fig = px.line(junk_bond_demand_df, x='Date', y='Junk Bond Demand', title='Junk Bond Demand')
 
 # Create a grid of subplots with 1 row and 2 columns
-fig = make_subplots(rows=3, cols=3)
+fig = make_subplots(rows=3, cols=3, shared_xaxes='all')
 
 # Add each Plotly figure to a subplot in the grid
 fig.add_trace(fear_greed_fig.data[0], row=1, col=1)
@@ -62,7 +62,7 @@ fig.add_trace(safe_haven_demand_fig.data[0], row=3, col=1)
 fig.add_trace(junk_bond_demand_fig.data[0], row=3, col=2)
 
 # Update the layout of the grid
-fig.update_layout(title='Fear and Greed Index')
+fig.update_layout(title='Fear and Greed Index', hovermode='x unified')
 
 # Show the Plotly figure
 fig.show()
